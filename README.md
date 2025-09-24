@@ -1,12 +1,50 @@
-# React + Vite
+# Todo List Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+A simple Todo List app built with React.js, allowing users to add, edit, toggle, and delete tasks. Uses local storage for persistence and Tailwind CSS for styling.
 
-Currently, two official plugins are available:
+## Screenshots
+![Todo App Screenshot](./images/app-screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Add, edit, toggle, and delete todo items.
+- Persist tasks using local storage.
+- Responsive UI with Tailwind CSS.
 
-## Expanding the ESLint configuration
+## Technologies Used
+- React.js
+- Tailwind CSS
+- JavaScript
+- Local Storage API
+- Vite 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Usage
+
+Add tasks via input field.
+Toggle completion with checkbox.
+Edit tasks with pencil icon (✏️), save with save icon (📁).
+Delete tasks with "X" icon (❌).
+Tasks persist on refresh via local storage.
+
+## Project Structure
+
+todo-list/
+├── src/
+│   ├── components/
+│   │   ├── TodoForm.jsx
+│   │   ├── Todoitem.jsx
+│   ├── contexts/
+│   │   ├── ToDoContext.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── index.css
+│   └── App.css
+├── images/
+│   └── app-screenshot.png
+├── public/
+├── package.json
+└── README.md
+
+## Acknowledgments
+
+Built with React and Tailwind CSS.
