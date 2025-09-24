@@ -9,9 +9,9 @@ function Todoitem({ todo }) {
     const [todoMsg, setTodoMsg] = React.useState(todo.title); 
 
     const editTodo = () => {
-        updatedToDo(todo.id, {...todo, title: todoMsg });
+        updatedToDo(todo.id, { ...todo, title: todoMsg });
         setIsTodoEditable(false);
-    }
+    };
 
     const toggleCompleted = () => {
         toggleToDo(todo.id);

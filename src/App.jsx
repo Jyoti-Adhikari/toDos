@@ -13,8 +13,8 @@ function App() {
   }
 
   const updatedToDo = (id, title) => {
-    setToDos((prev) => prev.map(todo => todo.id === id ? { ...todo, title } : todo))
-  }
+  setToDos((prev) => prev.map((todo) => (todo.id === id ? { ...todo, ...title } : todo)));
+};
 
   const toggleToDo = (id) => {
     setToDos((prev) => prev.map(todo => todo.id === id ? { ...todo, completed: !todo.completed } : todo))
